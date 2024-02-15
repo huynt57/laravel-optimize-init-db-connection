@@ -3,6 +3,7 @@
 namespace Huynt57\LaravelOptimizeInitDbConnection;
 
 use Illuminate\Database\Connectors\MySqlConnector;
+use PDO;
 
 class OptimizedMySqlConnector extends MySqlConnector
 {
