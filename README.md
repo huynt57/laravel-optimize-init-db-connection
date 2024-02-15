@@ -6,7 +6,9 @@
 
 
 
-As mentioned in PR [50044](https://github.com/laravel/framework/pull/50044), this package is for lower Laravel version (PHP >= 7.2, Laravel version >= 6)
+As mentioned in PR [50044](https://github.com/laravel/framework/pull/50044), this package was implemented for lower Laravel version (PHP >= 7.2, Laravel >= 6)
+
+> "The current code does multiple round-trips to set all the variables we need for our config, both because there are multiple commands to run, but also because it's using prepare, for many of them - each use of prepare and execute causes 3 round trips - one to prepare, one to execute, and one to close statement (on garbage collection of the statement in PHP land). The MySQL SET command supports setting multiple things in a comma separated fashion. Refactoring to do this enables us to just run one SET statement against the server. This can make a real difference in a cloud situation such as AWS Lambda talking to an RDS database where we have to go cross-AZ with low single digit ms latency, instead of sub-ms latency. This also reduces load on the DB (fewer statements to execute), so spinning up a bunch of Lambdas in a burst will be less of a burden."
 
 
 ## Installation
