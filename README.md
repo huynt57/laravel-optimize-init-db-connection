@@ -1,19 +1,12 @@
-# This is my package laravel-optimize-init-db-connection
+# This package for optimize Laravel Init Databas Connection
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/huy-nguyen/laravel-optimize-init-db-connection.svg?style=flat-square)](https://packagist.org/packages/huy-nguyen/laravel-optimize-init-db-connection)
 [![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/huy-nguyen/laravel-optimize-init-db-connection/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/huy-nguyen/laravel-optimize-init-db-connection/actions?query=workflow%3Arun-tests+branch%3Amain)
 [![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/huy-nguyen/laravel-optimize-init-db-connection/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/huy-nguyen/laravel-optimize-init-db-connection/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/huy-nguyen/laravel-optimize-init-db-connection.svg?style=flat-square)](https://packagist.org/packages/huy-nguyen/laravel-optimize-init-db-connection)
 
-This is where your description should go. Limit it to a paragraph or two. Consider adding a small example.
+As mentioned in PR [50044](https://github.com/laravel/framework/pull/50044), this package for lower Laravel version (PHP >= 8, Laravel version >= 8)
 
-## Support us
-
-[<img src="https://github-ads.s3.eu-central-1.amazonaws.com/laravel-optimize-init-db-connection.jpg?t=1" width="419px" />](https://spatie.be/github-ad-click/laravel-optimize-init-db-connection)
-
-We invest a lot of resources into creating [best in class open source packages](https://spatie.be/open-source). You can support us by [buying one of our paid products](https://spatie.be/open-source/support-us).
-
-We highly appreciate you sending us a postcard from your hometown, mentioning which of our package(s) you are using. You'll find our address on [our contact page](https://spatie.be/about-us). We publish all received postcards on [our virtual postcard wall](https://spatie.be/open-source/postcards).
 
 ## Installation
 
@@ -21,13 +14,6 @@ You can install the package via composer:
 
 ```bash
 composer require huy-nguyen/laravel-optimize-init-db-connection
-```
-
-You can publish and run the migrations with:
-
-```bash
-php artisan vendor:publish --tag="laravel-optimize-init-db-connection-migrations"
-php artisan migrate
 ```
 
 You can publish the config file with:
@@ -40,20 +26,39 @@ This is the contents of the published config file:
 
 ```php
 return [
+     'driver' => 'mysql',
 ];
-```
-
-Optionally, you can publish the views using
-
-```bash
-php artisan vendor:publish --tag="laravel-optimize-init-db-connection-views"
 ```
 
 ## Usage
 
+As default, this package will change your "mysql" connection. You can setup new database connection by:
+
+Change your configuration (```php config/optimize-init-db-connection.php ```)
 ```php
-$laravelOptimizeInitDbConnection = new Huynt57\LaravelOptimizeInitDbConnection();
-echo $laravelOptimizeInitDbConnection->echoPhrase('Hello, Huynt57!');
+return [
+     'driver' => 'optimize-mysql',
+];
+```
+Update your driver connection to ```optimize-mysql ```:
+```php
+'mysql' => [
+            'driver' => 'optimize-mysql',
+            'url' => env('DATABASE_URL'),
+            'host' => env('DB_HOST', '127.0.0.1'),
+            'port' => env('DB_PORT', '3306'),
+            'database' => env('DB_DATABASE', 'forge'),
+            'username' => env('DB_USERNAME', 'forge'),
+            'password' => env('DB_PASSWORD', ''),
+            'unix_socket' => env('DB_SOCKET', ''),
+            'charset' => 'utf8mb4',
+            'collation' => 'utf8mb4_unicode_ci',
+            'prefix' => '',
+            'prefix_indexes' => true,
+            'strict' => false,
+            'engine' => null,
+            'options' => []
+        ],
 ```
 
 ## Testing
