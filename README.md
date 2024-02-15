@@ -5,7 +5,7 @@
 [![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/huy-nguyen/laravel-optimize-init-db-connection/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/huy-nguyen/laravel-optimize-init-db-connection/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/huy-nguyen/laravel-optimize-init-db-connection.svg?style=flat-square)](https://packagist.org/packages/huy-nguyen/laravel-optimize-init-db-connection)
 
-As mentioned in PR [50044](https://github.com/laravel/framework/pull/50044), this package for lower Laravel version (PHP >= 8, Laravel version >= 8)
+As mentioned in PR [50044](https://github.com/laravel/framework/pull/50044), this package is for lower Laravel version (PHP >= 7.2, Laravel version >= 6)
 
 
 ## Installation
