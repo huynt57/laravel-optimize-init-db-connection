@@ -1,6 +1,6 @@
 {
     "name": "huy-nguyen/laravel-optimize-init-db-connection",
-    "description": "This is my package laravel-optimize-init-db-connection",
+    "description": "A package for optimize Laravel init database connection",
     "keywords": [
         "huynt57",
         "laravel",
