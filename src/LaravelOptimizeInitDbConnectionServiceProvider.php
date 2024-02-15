@@ -25,7 +25,7 @@ class LaravelOptimizeInitDbConnectionServiceProvider extends PackageServiceProvi
 
         $driverName = config('optimize-init-db-connection.driver') ?? 'mysql';
 
-        Connection::resolverFor($driverName ?? 'mysql', $factory);
+        Connection::resolverFor($driverName, $factory);
 
         $this->app->bind('db.connector.' . $driverName, OptimizedMySqlConnector::class);
     }
