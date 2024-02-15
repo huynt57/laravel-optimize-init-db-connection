@@ -1,4 +1,4 @@
-# This package for optimize Laravel Init Databas Connection
+# This package for optimize Laravel Init Database Connection
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/huy-nguyen/laravel-optimize-init-db-connection.svg?style=flat-square)](https://packagist.org/packages/huy-nguyen/laravel-optimize-init-db-connection)
 [![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/huy-nguyen/laravel-optimize-init-db-connection/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/huy-nguyen/laravel-optimize-init-db-connection/actions?query=workflow%3Arun-tests+branch%3Amain)
