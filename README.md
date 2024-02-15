@@ -81,7 +81,7 @@ Please review [our security policy](../../security/policy) on how to report secu
 
 ## Credits
 
-- [huynt57](https://github.com/Huy Nguyen)
+- [huynt57](https://github.com/huynt57)
 - [All Contributors](../../contributors)
 
 ## License
