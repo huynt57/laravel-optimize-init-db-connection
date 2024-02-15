@@ -32,7 +32,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Huynt57\\LaravelOptimizeInitDbConnection\\Tests\\": "tests/",
+            "Huynt57\\LaravelOptimizeInitDbConnection\\Tests\\": "tests/"
         }
     },
     "scripts": {
