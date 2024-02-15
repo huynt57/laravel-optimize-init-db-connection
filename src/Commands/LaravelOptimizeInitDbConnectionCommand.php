@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace Huynt57\LaravelOptimizeInitDbConnection\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class LaravelOptimizeInitDbConnectionCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'laravel-optimize-init-db-connection';
 
     public $description = 'My command';
 
