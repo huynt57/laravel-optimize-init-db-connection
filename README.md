@@ -2,8 +2,7 @@
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/huy-nguyen/laravel-optimize-init-db-connection.svg?style=flat-square)](https://packagist.org/packages/huy-nguyen/laravel-optimize-init-db-connection)
 [![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/huynt57/laravel-optimize-init-db-connection/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/huynt57/laravel-optimize-init-db-connection/actions/workflows/run-tests.yml)
-[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/huynt57/laravel-optimize-init-db-connection/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/huynt57/laravel-optimize-init-db-connection/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
-[![Total Downloads](https://img.shields.io/packagist/dt/huynt57/laravel-optimize-init-db-connection.svg?style=flat-square)](https://packagist.org/packages/huy-nguyen/laravel-optimize-init-db-connection)
+[![Total Downloads](https://img.shields.io/packagist/dt/huy-nguyen/laravel-optimize-init-db-connection.svg?style=flat-square)](https://packagist.org/packages/huy-nguyen/laravel-optimize-init-db-connection)
 
 
 
