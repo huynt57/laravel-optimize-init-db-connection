@@ -22,7 +22,7 @@ composer require huy-nguyen/laravel-optimize-init-db-connection
 You can publish the config file with:
 
 ```bash
-php artisan vendor:publish --tag="laravel-optimize-init-db-connection-config"
+php artisan vendor:publish --tag="optimize-init-db-connection-config"
 ```
 
 This is the contents of the published config file:
